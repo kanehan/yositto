@@ -116,17 +116,13 @@ html {
 }
 
 #contents .twitter {
-	position: absolute;
+	position: relative;
 	top: 0;
 	right: 0;
 	width: 250px;
-	height: 500px;
+	height: 300px;
 }
-#contents .twitter iframe {
-	position: absolute;
-	width: 100%!important;
-	height: 100%;
-}
+
 #contents .message {
 	position: absolute;
 	top: 500px;
@@ -256,16 +252,18 @@ dl.profile dt{
 	height: auto;
 }
 #contents .twitter {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 350px;
 	margin-top: 20px;
+	display:none;
 }
 #contents .message {
 	position: relative;
 	top: 0;
 	right: 0;
 	width: auto;
+	display:none;
 }
 /************************************************* @media screen and (max-width:768px) */
 }
