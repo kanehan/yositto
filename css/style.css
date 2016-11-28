@@ -1,0 +1,391 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Griffy);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+/************************************************* @media all */
+@media all {
+
+/*-----------------------------------------------*
+ * html
+ *-----------------------------------------------*/
+html {
+	background: #f6f6f6;
+	color: #000;
+	font: 12px/1.5 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+}
+
+/*-----------------------------------------------*
+ * img
+ *-----------------------------------------------*/
+
+
+
+
+/*-----------------------------------------------*
+ * #wrapper
+ *-----------------------------------------------*/
+#wrapper {
+	position: relative;
+	min-width: 300px;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+}
+/*-----------------------------------------------*
+ * #h_image
+ *-----------------------------------------------*/
+
+#h_image {
+	float: left
+}
+
+/*-----------------------------------------------*
+ * #header
+ *-----------------------------------------------*/
+#header {
+	padding: 15px 0px 10px;
+}
+
+#header .logo {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 40px;
+	font-family: 'Josefin Slab', sans-serif;
+	color: #000;
+}
+
+#header .logo a { text-decoration: none; }
+#header .logo a:hover { text-decoration: none; }
+
+
+#header .lead {
+	display: inline-block;
+	font-size: 13px;
+}
+#header .lead strike {
+	display: block;
+}
+
+/*-----------------------------------------------*
+ * #share
+ *-----------------------------------------------*/
+#share .fb {
+	display: inline-block;
+}
+
+
+/*-----------------------------------------------*
+ * #contents
+ *-----------------------------------------------*/
+#contents {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display:inline-block;
+}
+#contents .monitor {
+	position: relative;
+	height: 500px;
+	margin-right: 270px;
+}
+#contents .monitor img {
+	width: 100%;
+	height: 500px;
+}
+#contents .monitor iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#contents .monitor embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#contents .twittcasting_sp {
+	display:none;
+}
+
+
+#contents .twitter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 500px;
+}
+#contents .twitter iframe {
+	position: absolute;
+	width: 100%!important;
+	height: 100%;
+}
+#contents .message {
+	position: absolute;
+	top: 500px;
+	right: 0px;
+	width: 250px;
+	margin-top: 10px;
+	background: #ffcc00;
+	border-radius: 5px;
+	text-align: center;
+}
+#contents .message:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	border: 8px solid transparent;
+	border-bottom-color: #ffcc00;
+	border-top-width: 0;
+}
+#contents .message p.text {
+	padding: 10px 10px 5px 10px;
+	font-size: 11px;
+}
+#contents .message p.face {
+	padding: 0px 10px 10px 10px;
+	position: relative;
+	text-align: center;
+	-webkit-animation: anime1 3s linear 0 infinite;
+}
+#contents .loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #000;
+}
+#contents .loading img {
+	width: 30px;
+	height: 30px;
+	vertical-align: bottom;
+}
+
+@-webkit-keyframes anime1 {
+	  0% { -webkit-transform: translate(0px, 0px);}
+	  2% { -webkit-transform: translate(0px, 3px);}
+	  4% { -webkit-transform: translate(0px, 0px);}
+	  6% { -webkit-transform: translate(0px, 3px);}
+	  8% { -webkit-transform: translate(0px, 0px);}
+	 10% { -webkit-transform: translate(0px, 3px);}
+	 12% { -webkit-transform: translate(0px, 0px);}
+	 14% { -webkit-transform: translate(0px, 3px);}
+	 16% { -webkit-transform: translate(0px, 0px);}
+	 18% { -webkit-transform: translate(0px, 3px);}
+	 20% { -webkit-transform: translate(0px, 0px);}
+	 22% { -webkit-transform: translate(0px, 3px);}
+	 24% { -webkit-transform: translate(0px, 0px);}
+	 26% { -webkit-transform: translate(0px, 3px);}
+	 28% { -webkit-transform: translate(0px, 0px);}
+	 30% { -webkit-transform: translate(0px, 3px);}
+	 32% { -webkit-transform: translate(0px, 0px);}
+	 34% { -webkit-transform: translate(0px, 3px);}
+	 36% { -webkit-transform: translate(0px, 0px);}
+	 38% { -webkit-transform: translate(0px, 3px);}
+	 40% { -webkit-transform: translate(0px, 0px);}
+	 42% { -webkit-transform: translate(0px, 3px);}
+	 44% { -webkit-transform: translate(0px, 0px);}
+	 46% { -webkit-transform: translate(0px, 3px);}
+	 48% { -webkit-transform: translate(0px, 0px);}
+	 50% { -webkit-transform: translate(0px, 3px);}
+	100% { -webkit-transform: translate(0px, 0px);}	
+}
+
+
+div.link_button a {
+	background-color: #555;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	display: block;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	max-width:500px;
+	margin: 40px 0 20px;
+
+}
+
+div.link_button a:hover {
+		background-color: #999;
+
+}
+
+#contents .setsumei{
+	padding: 0px 10px 
+}
+
+#contents .setsumei p.subject {
+		font-size: 20px;
+		font-weight:bold;
+		padding: 20px 0px 0px
+}
+
+span.request{
+		font-size: 18px;
+		font-weight:bold;
+		display:block
+}
+
+dl.profile dt{
+		font-weight:bold;
+		float: left;
+
+}
+
+
+/*-----------------------------------------------*
+ * #footer
+ *-----------------------------------------------*/
+#footer {
+	padding: 20px 0px;
+	display:block
+}
+
+/************************************************* @media all */
+}
+
+
+/************************************************* @media screen and (max-width:768px) */
+@media screen and (max-width:768px) {
+
+/*-----------------------------------------------*
+ * #contents
+ *-----------------------------------------------*/
+#contents {
+	height: auto;
+}
+#contents .monitor {
+	height: auto;
+	margin-right: 0;
+}
+#contents .monitor img {
+	height: auto;
+}
+#contents .twitter {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+}
+#contents .message {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: auto;
+}
+/************************************************* @media screen and (max-width:768px) */
+}
+
+
+/*-----------------------------------------------*
+ * #kiroku 
+ *-----------------------------------------------*/
+
+#kiroku div.block {
+	margin: 0 -15px 0 0;
+	zoom: 1;
+}
+#kiroku div.cell {
+	float: left;
+	width: 320px;/*246*/
+	margin: 0 15px 15px 0;
+	padding: 15px 15px;
+	background: #fff;
+}
+
+
+#kiroku div.cell a { color: #666; text-decoration: none; }
+#kiroku div.cell a:hover { color: #1b7fcc; }
+
+#kiroku div.cell p.detail { clear: both; padding: 5px 0 5px 0; }
+#kiroku div.cell p.detail span.title { font-weight:bold; font-size:15px; }
+
+
+#kiroku h3.kiroku_title {
+	display: inline-block;
+	margin: 35px 20px 10px 0px;
+	font-size: 23px;
+	font-weight:bold;
+	color: #555;
+
+}
+
+div.kiroku_button a {
+	background-color: #555;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	display: block;
+	padding: 10px 10px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	color: #fff;
+	max-width:300px;
+	margin: 40px 0;
+
+}
+
+div.kiroku_button a:hover {
+		background-color: #999;
+
+}
+
+
+
+
+/*-----------------------------------------------*
+ * #kiroku movie 
+ *-----------------------------------------------*/
+#kiroku_movie {
+	position: relative;
+	max-width: 640px;
+	height: aut;
+}
+
+div.iframeWrap {
+	position: relative;
+	width: 100%;
+	padding-top: 70%;
+}
+div.iframeWrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+#kiroku_movie h3.kiroku_movie_title {
+	display: inline-block;
+	margin: 35px 20px 10px 0px;
+	font-size: 23px;
+	font-weight:bold;
+	color: #555;
+
+}
+
+
+#kiroku_movie p.detail { 
+	clear: both; 
+	padding: 20px 5px 5px 5px; 
+	font-size:18px;
+	color: #666;
+
+}

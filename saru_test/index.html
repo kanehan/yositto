@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+<!-- External files -->
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.simplePagination.js"></script>
+
+	<script src="js/xxxx.js"></script>
+
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body id="top">
+<div id="wrapper">
+
+<!--　header start-->	
+	<header role="banner">
+		<div class="header_div">
+			<a href="#" class="logo">
+				サルサーチ
+			</a>
+			<span class="page_desc">
+				簡単にフットサルコートが探せるサイト
+			</span>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="#">無料登録</a></li>
+				<li><a href="#">ログイン</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--　header end-->	
+
+<!--　main content-->	
+	
+	<div id="content_wrapper" class="clearfix">
+
+
+		<div id="heading">
+			<h1>
+				全国のフットサルコートを探す。
+			</h1>
+		</div>
+
+
+
+		<main role="main" class="clearfix">
+
+
+
+		<div class="top_map clearfix">
+			<div class="top_map_select clearfix">
+
+			<p>地域を選択してください。</p>
+	            <ul class="hokkaido">
+	                <li><a href="#" name="hokkaido" class="region_btn">北海道</a></li>
+	            </ul>
+	            <ul class="tohoku">
+	                <li><a href="/aomori/" name="aomori" class="region_btn">青森</a></li>
+	                <li><a href="/iwate/" name="iwate" class="region_btn">岩手</a></li>
+	                <li><a href="/miyagi/" name="miyagi" class="region_btn">宮城</a></li>
+	                <li><a href="/akita/" name="akita" class="region_btn">秋田</a></li>
+	                <li><a href="/yamagata/" name="yamagata" class="region_btn">山形</a></li>
+	                <li><a href="/fukushima/" name="fukushima" class="region_btn">福島</a></li>
+	            </ul>
+	            <ul class="kanto">
+	                <li><a href="/tokyo/" name="tokyo" class="region_btn">東京</a></li>
+	                <li><a href="/kanagawa/" name="kanagawa" class="region_btn">神奈川</a></li>
+	                <li><a href="/saitama/" name="saitama" class="region_btn">埼玉</a></li>
+	                <li><a href="/chiba/" name="chiba" class="region_btn">千葉</a></li>
+	                <li><a href="/ibaraki/" name="ibaraki" class="region_btn">茨城</a></li>
+	                <li><a href="/tochigi/" name="tochigi" class="region_btn">栃木</a></li>
+	                <li><a href="/gunma/" name="gunma" class="region_btn">群馬</a></li>
+	            </ul>
+	            <ul class="hokuriku">
+	                <li><a href="/niigata/" name="niigata" class="region_btn">新潟</a></li>
+	                <li><a href="/toyama/" name="toyama" class="region_btn">富山</a></li>
+	                <li><a href="/ishikawa/" name="ishikawa" class="region_btn">石川</a></li>
+	                <li><a href="/fukui/" name="fukui" class="region_btn">福井</a></li>
+	                <li><a href="/yamanashi/" name="yamanashi" class="region_btn">山梨</a></li>
+	                <li><a href="/nagano/" name="nagano" class="region_btn">長野</a></li>
+	            </ul>
+	            <ul class="tokai">
+	                <li><a href="/aichi/" name="aichi" class="region_btn">愛知</a></li>
+	                <li><a href="/gifu/" name="gifu" class="region_btn">岐阜</a></li>
+	                <li><a href="/shizuoka/" name="shizuoka" class="region_btn">静岡</a></li>
+	                <li><a href="/mie/" name="mie" class="region_btn">三重</a></li>
+	            </ul>
+	            <ul class="chubu">
+	                <li><a href="/osaka/" name="osaka" class="region_btn">大阪</a></li>
+	                <li><a href="/shiga/" name="shiga" class="region_btn">滋賀</a></li>
+	                <li><a href="/kyoto/" name="kyoto" class="region_btn">京都</a></li>
+	                <li><a href="/hyogo/" name="hyogo" class="region_btn">兵庫</a></li>
+	                <li><a href="/nara/" name="nara" class="region_btn">奈良</a></li>
+	                <li><a href="/wakayama/" name="wakayama" class="region_btn">和歌山</a></li>
+	            </ul>
+	            <ul class="chugoku">
+	                <li><a href="/tottori/" name="tottori" class="region_btn">鳥取</a></li>
+	                <li><a href="/shimane/" name="shimane" class="region_btn">島根</a></li>
+	                <li><a href="/okayama/" name="okayama" class="region_btn">岡山</a></li>
+	                <li><a href="/hiroshima/" name="hiroshima" class="region_btn">広島</a></li>
+	                <li><a href="/yamaguchi/" name="yamaguchi" class="region_btn">山口</a></li>
+	            </ul>
+	            <ul class="shikoku">
+	                <li><a href="/tokushima/" name="tokushima" class="region_btn">徳島</a></li>
+	                <li><a href="/kagawa/" name="kagawa" class="region_btn">香川</a></li>
+	                <li><a href="/ehime/" name="ehime" class="region_btn">愛媛</a></li>
+	                <li><a href="/kochi/" name="kochi" class="region_btn">高知</a></li>
+	            </ul>
+	            <ul class="kyushu">
+	                <li><a href="/fukuoka/" name="fukuoka" class="region_btn">福岡</a></li>
+	                <li><a href="/saga/" name="saga" class="region_btn">佐賀</a></li>
+	                <li><a href="/nagasaki/" name="nagasaki" class="region_btn">長崎</a></li>
+	                <li><a href="/kumamoto/" name="kumamoto" class="region_btn">熊本</a></li>
+	                <li><a href="/oita/" name="oita" class="region_btn">大分</a></li>
+	                <li><a href="/miyazaki/" name="miyazaki" class="region_btn">宮崎</a></li>
+	                <li><a href="/kagoshima/" name="kagoshima" class="region_btn">鹿児島</a></li>
+	            </ul>
+	            <ul class="okinawa">
+	                <li><a href="/okinawa/" name="okinawa" class="region_btn">沖縄</a></li>
+	            </ul>
+            </div>
+        </div>
+
+		<div class="top_search clearfix">
+			<h2>駅名・地名で検索</h2>
+
+			<input type="text" name="srcbox" value="" id="srcbox" placeholder="駅名・地名を入力">
+			<input type="submit" name="srcbtn" value="検索" id="srcbtn">
+
+		</div>
+
+
+
+
+
+		</main>
+
+
+
+
+		<aside class="clearfix">
+			<div class="link_entry">
+				<a class="link_entry_btn" href="#">新しいコートを登録する</a>
+
+			</div>
+
+			<div class="bnr_aside_right">
+				<img src="images/banner_A_300x250.jpg"/>
+			</div>
+
+		</aside>
+
+
+	</div><!-- /#content_wrapper -->
+
+<!--　main content-->	
+
+
+<!--　footer-->	
+
+	<footer role="contentinfo" class="clearfix">
+		<ul >
+			<li><a href="#">お問い合わせ</a></li>
+			<li><a href="#">利用規約</a></li>
+			<li><a href="#">プライバシーポリシー</a></li>
+			<li>Copyright © 2016 サルサーチ All rights reserved.</li>
+		</ul>
+
+	</footer>
+
+<!--　footer-->	
+
+
+</div><!-- /#wrapper -->
+</body>
+</html>

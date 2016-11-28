@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Griffy);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
+/************************************************* @media all */
+@media all {
+
+/*-----------------------------------------------*
+ * html
+ *-----------------------------------------------*/
+html {
+	background: #f6f6f6;
+	color: #000;
+	font: 11px/1.5 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック',sans-serif;
+}
+/*-----------------------------------------------*
+ * #wrapper
+ *-----------------------------------------------*/
+#wrapper {
+	position: relative;
+	min-width: 300px;
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: 0px 10px 0px 10px;
+}
+/*-----------------------------------------------*
+ * #header
+ *-----------------------------------------------*/
+#header {
+	padding: 15px 0px;
+}
+#header .logo {
+	display: inline-block;
+	margin-right: 20px;
+	font-size: 32px;
+	font-family: 'Josefin Slab', serif;
+}
+#header .lead {
+	display: inline-block;
+	font-size: 10px;
+}
+#header .lead strike {
+	display: block;
+}
+/*-----------------------------------------------*
+ * #contents
+ *-----------------------------------------------*/
+#contents {
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+#contents .monitor {
+	position: relative;
+	height: 500px;
+	margin-right: 270px;
+}
+#contents .monitor img {
+	width: 100%;
+	height: 500px;
+}
+#contents .monitor iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#contents .twitter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 500px;
+}
+#contents .twitter iframe {
+	position: absolute;
+	width: 100%!important;
+	height: 100%;
+}
+#contents .message {
+	position: absolute;
+	top: 500px;
+	right: 0px;
+	width: 250px;
+	margin-top: 10px;
+	background: #cccccc;
+	border-radius: 5px;
+	text-align: center;
+}
+#contents .message:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	margin-left: -8px;
+	width: 0;
+	border: 8px solid transparent;
+	border-bottom-color: #cccccc;
+	border-top-width: 0;
+}
+#contents .message p.text {
+	padding: 10px 10px 5px 10px;
+}
+#contents .message p.face {
+	padding: 0px 10px 10px 10px;
+	position: relative;
+	text-align: center;
+	-webkit-animation: anime1 3s linear 0 infinite;
+}
+#contents .loading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	padding: 10px;
+	border-radius: 5px;
+	background: #000;
+}
+#contents .loading img {
+	width: 30px;
+	height: 30px;
+	vertical-align: bottom;
+}
+
+@-webkit-keyframes anime1 {
+	  0% { -webkit-transform: translate(0px, 0px);}
+	  2% { -webkit-transform: translate(0px, 3px);}
+	  4% { -webkit-transform: translate(0px, 0px);}
+	  6% { -webkit-transform: translate(0px, 3px);}
+	  8% { -webkit-transform: translate(0px, 0px);}
+	 10% { -webkit-transform: translate(0px, 3px);}
+	 12% { -webkit-transform: translate(0px, 0px);}
+	 14% { -webkit-transform: translate(0px, 3px);}
+	 16% { -webkit-transform: translate(0px, 0px);}
+	 18% { -webkit-transform: translate(0px, 3px);}
+	 20% { -webkit-transform: translate(0px, 0px);}
+	 22% { -webkit-transform: translate(0px, 3px);}
+	 24% { -webkit-transform: translate(0px, 0px);}
+	 26% { -webkit-transform: translate(0px, 3px);}
+	 28% { -webkit-transform: translate(0px, 0px);}
+	 30% { -webkit-transform: translate(0px, 3px);}
+	 32% { -webkit-transform: translate(0px, 0px);}
+	 34% { -webkit-transform: translate(0px, 3px);}
+	 36% { -webkit-transform: translate(0px, 0px);}
+	 38% { -webkit-transform: translate(0px, 3px);}
+	 40% { -webkit-transform: translate(0px, 0px);}
+	 42% { -webkit-transform: translate(0px, 3px);}
+	 44% { -webkit-transform: translate(0px, 0px);}
+	 46% { -webkit-transform: translate(0px, 3px);}
+	 48% { -webkit-transform: translate(0px, 0px);}
+	 50% { -webkit-transform: translate(0px, 3px);}
+	100% { -webkit-transform: translate(0px, 0px);}	
+}
+/*-----------------------------------------------*
+ * #footer
+ *-----------------------------------------------*/
+#footer {
+	padding: 20px 0px;
+}
+
+/************************************************* @media all */
+}
+
+
+/************************************************* @media screen and (max-width:768px) */
+@media screen and (max-width:768px) {
+
+/*-----------------------------------------------*
+ * #contents
+ *-----------------------------------------------*/
+#contents {
+	height: auto;
+}
+#contents .monitor {
+	height: auto;
+	margin-right: 0;
+}
+#contents .monitor img {
+	height: auto;
+}
+#contents .twitter {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	margin-top: 20px;
+}
+#contents .message {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: auto;
+}
+/************************************************* @media screen and (max-width:768px) */
+}

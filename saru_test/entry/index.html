@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+<!-- External files -->
+	<link rel="stylesheet" href="../css/style.css"> 
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.simplePagination.js"></script>
+
+	<script src="js/xxxx.js"></script>
+
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body id="entry">
+<div id="wrapper">
+
+<!--　header start-->	
+	<header role="banner">
+		<div class="header_div">
+			<a href="#" class="logo">
+				サルサーチ
+			</a>
+			<span class="page_desc">
+				簡単にフットサルコートが探せるサイト
+			</span>
+		</div>
+
+		<nav>
+			<ul>
+				<li><a href="#">無料登録</a></li>
+				<li><a href="#">ログイン</a></li>
+			</ul>
+		</nav>
+	</header>
+
+<!--　header end-->	
+
+<!--　main content-->	
+	
+	<div id="content_wrapper" class="clearfix">
+
+
+		<div id="heading">
+			<h1>
+				新しいコートを登録
+			</h1>
+		</div>
+
+
+
+		<main role="main" class="clearfix">
+
+			<form action="">
+			<div class="form_block clearfix">
+
+				<dl>
+					<dt>コート名（必須）</dt>
+						<dd>
+							<input type="text" name="court_name" id="court_name" value="" placeholder="（例）サルサーチ フットサルコート">
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>ホームページ（必須）</dt>
+						<dd>
+							<input type="text" name="url" id="url" value="" placeholder="（例）http://www.yahoo.co.jp/">
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>電話番号</dt>
+						<dd>
+							<input type="text" name="tel" id="tel" value="" placeholder="（例）03-1234-5678">
+						</dd>
+				</dl>
+
+				<dl class="form_address">
+					<dt>住所</dt>
+						<dd>
+							<input type="text" name="address" id="address" value="" placeholder="（例）東京都中央区銀座１－２－３－４">
+							<p>入力した住所を元に下記の地図にマーカーが表示されます。</p>
+						</dd>
+
+					<dt>
+						地図
+						<p>場所の調整方法：<br>地図をダブルクリック or <br>マーカーをドラッグ</p>
+					</dt>
+						<dd>
+							<div class="map_mark">
+								<img src="images/map.jpg">
+							</div>
+						</dd>
+
+				</dl>
+
+				<dl class="form_access">
+					<dt>アクセス</dt>
+						<dd>
+							<textarea cols="37" rows="5" name="access" id="access" value="" placeholder="（例）&#13;&#10;日比谷駅　A14出口　徒歩3分"></textarea>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>営業時間</dt>
+						<dd>
+							<textarea cols="37" rows="5" name="busines_hour" id="busines_hour" value="" placeholder="(例)&#13;&#10;[月～金]　11:00～23:00&#13;&#10;[土・日・祝] 11:00～21:00"></textarea>	
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>男性用シャワー数</dt>
+						<dd>
+							<select name="m_shower">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6以上">6以上</option>
+							</select>
+
+						</dd>
+
+					<dt>女性用シャワー数</dt>
+						<dd>
+							<select name="f_shower">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6以上">6以上</option>
+							</select>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="shower_note">備考</label>
+							<input type="text" name="shower_note" id="shower_note" value="" placeholder="（例）脱衣所無し。シャンプーリンスあり。">
+							<p>30文字以内</p>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>芝質</dt>
+						<dd class="form_radio">
+							<div class="form_radio_block_1 clearfix">
+								<input type="radio" name="shiba" id="shiba_long" value="">
+								<label for="shiba_long">ロングパイル</label>
+								<input type="radio" name="shiba" id="shiba_short" value="">
+								<label for="shiba_short">ショートパイル</label>
+								<input type="radio" name="shiba" id="shiba_flat" value="">
+								<label for="shiba_flat">フラットコート</label>
+							</div>
+
+							<div class="form_radio_block_2 clearfix">
+								<input type="radio" name="shiba" id="shiba_other" value="">
+								<label for="shiba_other">その他</label>
+								<input type="radio" name="shiba" id="shiba_unco" value="">
+								<label for="shiba_unco">未確認</label>
+							</div>
+
+						</dd>
+
+						<dd class="form_note_dd">						
+							<label for="shower_note">備考</label>
+							<input type="text" name="shower_note" id="shower_note" value="" placeholder="（例）砂混じり。">
+							<p>30文字以内</p>
+						</dd>
+
+				</dl>
+
+				<dl>
+					<dt>コート数</dt>
+						<dd>
+							<select name="court_number">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6以上">6以上</option>
+							</select>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>屋根</dt>
+						<dd class="form_radio">
+							<input type="radio" name="roof" id="roof_y" value="">
+							<label for="roof_y">有</label>
+							<input type="radio" name="roof" id="roof_n" value="">
+							<label for="roof_n">無</label>
+							<input type="radio" name="roof" id="roof_unco" value="">
+							<label for="roof_unco">未確認</label>
+						</dd>
+						<dd class="form_note_dd">
+							<label for="roof_note">備考</label>
+							<input type="text" name="roof_note" id="roof_note" value="" placeholder="（例）体育館冷房なし。">
+							<p>30文字以内</p>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>駐車場</dt>
+						<dd class="form_radio">
+							<input type="radio" name="parking" id="parking_y" value="">
+							<label for="parking_y">有</label>
+							<input type="radio" name="parking" id="parking_n" value="">
+							<label for="parking_n">無</label>
+							<input type="radio" name="parking" id="parking_unco" value="">
+							<label for="parking_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="parking_note">備考</label>
+							<input type="text" name="parking_note" id="parking_note" value="" placeholder="（例）コートまで100m程度の距離あり。">
+							<p>30文字以内</p>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>ウェアレンタル</dt>
+						<dd class="form_radio">
+							<input type="radio" name="wear" id="wear_y" value="">
+							<label for="wear_y">有</label>
+							<input type="radio" name="wear" id="wear_n" value="">
+							<label for="wear_n">無</label>
+							<input type="radio" name="wear" id="wear_unco" value="">
+							<label for="wear_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="wear_note">備考</label>
+							<input type="text" name="wear_note" id="wear_note" value="" placeholder="（例）M・Lサイズのみ">
+							<p>30文字以内</p>
+						</dd>
+				</dl>
+
+				<dl>
+					<dt>シューズレンタル</dt>
+						<dd class="form_radio">
+							<input type="radio" name="shoes" id="shoes_y" value="">
+							<label for="shoes_y">有</label>
+							<input type="radio" name="shoes" id="shoes_n" value="">
+							<label for="shoes_n">無</label>
+							<input type="radio" name="shoes" id="shoes_unco" value="">
+							<label for="shoes_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="shoes_note">備考</label>
+							<input type="text" name="shoes_note" id="shoes_note" value="" placeholder="（例）29cmまで">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>大人スクール</dt>
+						<dd class="form_radio">
+							<input type="radio" name="adult" id="adult_y" value="">
+							<label for="adult_y">有</label>
+							<input type="radio" name="adult" id="adult_n" value="">
+							<label for="adult_n">無</label>
+							<input type="radio" name="adult" id="adult_unco" value="">
+							<label for="adult_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="adult_note">備考</label>
+							<input type="text" name="adult_note" id="adult_note" value="" placeholder="（例）ビギナークラスのみ。">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>女子 個サル</dt>
+						<dd class="form_radio">
+							<input type="radio" name="private_f" id="private_f_y" value="">
+							<label for="private_f_y">有</label>
+							<input type="radio" name="private_f" id="private_f_n" value="">
+							<label for="private_f_n">無</label>
+							<input type="radio" name="private_f" id="private_f_unco" value="">
+							<label for="private_f_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="private_f_note">備考</label>
+							<input type="text" name="private_f_note" id="private_f_note" value="" placeholder="（例）人数によって中止の場合あり。">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>女子 スクール</dt>
+						<dd class="form_radio">
+							<input type="radio" name="school_f" id="school_f_y" value="">
+							<label for="school_f_y">有</label>
+							<input type="radio" name="school_f" id="school_f_n" value="">
+							<label for="school_f_n">無</label>
+							<input type="radio" name="school_f" id="school_f_unco" value="">
+							<label for="school_f_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="school_f_note">備考</label>
+							<input type="text" name="school_f_note" id="school_f_note" value="" placeholder="（例）男女混合ビギナースクールのみ。">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>子供スクール</dt>
+						<dd class="form_radio">
+							<input type="radio" name="school_k" id="school_k_y" value="">
+							<label for="school_k_y">有</label>
+							<input type="radio" name="school_k" id="school_k_n" value="">
+							<label for="school_k_n">無</label>
+							<input type="radio" name="school_k" id="school_k_unco" value="">
+							<label for="school_k_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="school_k_note">備考</label>
+							<input type="text" name="school_k_note" id="school_k_note" value="" placeholder="（例）2歳～12歳各クラス有り">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>ソサイチコート</dt>
+						<dd class="form_radio">
+							<input type="radio" name="sosaichi" id="sosaichi_y" value="">
+							<label for="sosaichi_y">有</label>
+							<input type="radio" name="sosaichi" id="sosaichi_n" value="">
+							<label for="sosaichi_n">無</label>
+							<input type="radio" name="sosaichi" id="sosaichi_unco" value="">
+							<label for="sosaichi_unco">未確認</label>
+						</dd>
+
+						<dd class="form_note_dd">
+							<label for="sosaichi_note">備考</label>
+							<input type="text" name="sosaichi_note" id="sosaichi_note" value="" placeholder="（例）通常コート3面利用。">
+							<p>30文字以内</p>
+						</dd>						
+				</dl>
+
+				<dl>
+					<dt>メンバー登録料</dt>
+						<dd class="form_radio form_menber_regis">
+							<input type="radio" name="regis_fee" id="regis_fee_y" value="">
+							<label for="regis_fee_y">有</label>
+							<input type="text" name="regis_fee_en" id="regis_fee_en" value="">
+							<p class="form_en">円</p>							
+
+
+							<input type="radio" name="regis_fee" id="regis_fee_n" value="">
+							<label for="regis_fee_n">無</label>
+							<input type="radio" name="regis_fee" id="regis_fee_unco" value="">
+							<label for="regis_fee_unco">未確認</label>
+						</dd>
+						<dd class="form_note_dd">
+							<label for="regis_fee_note">備考</label>
+							<input type="text" name="regis_fee_note" id="regis_fee_note" value="" placeholder="（例）年間契約">
+							<p>30文字以内</p>
+						</dd>						
+
+				</dl>
+
+
+			</div><!-- form_block -->
+
+
+			<div class="form_block clearfix">
+				<h2>
+					コート料金（1時間）
+				</h2>
+
+				<dl>
+					<dt>コート種類</dt>
+						<dd class="form_radio form_courttype">
+							<div class="form_radio_block_1 clearfix">
+								<input type="radio" name="court_type_1" id="court_type_1_r" value="">
+								<label for="court_type_1_r">通常コート</label>
+								<input type="radio" name="court_type_1" id="court_type_1_sosaichi" value="">
+								<label for="court_type_1_sosaichi">ソサイチコート</label>
+							</div>
+							<div class="form_radio_block_2 clearfix">
+								<input type="radio" name="court_type_1" id="court_type_1_other" value="">
+								<label for="court_type_1_other">その他のコート</label>
+								<input type="text" name="court_type_1_other" id="court_type_1_other" value="" placeholder="（例）VIPコート">
+							</div>								
+						</dd>
+
+					<dt>会員種別</dt>
+						<dd>
+							<select name="regi_type_1">
+							<option value="menber">メンバー会員</option>
+							<option value="visiter">ビジター（未会員）</option>
+							<option value="visiter">学生割引</option>				
+							</select>
+						</dd>
+
+
+					<dt>料金</dt>
+						<dd class="form_court_fee_dd">
+							<select name="week_1_a">
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_1_a" id="start_time_1_a" value="10:00" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_1_a" id="end_time_1_a" value="">
+							</div>
+
+							<input type="text" name="usage_fee_1_a" id="usage_fee_1_a" value="">
+							<p class="form_en">円</p>							
+
+						</dd>
+
+						<dd class="form_court_fee_dd">
+							<select name="week_1_b">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_1_b" id="start_time_1_b" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_1_b" id="end_time_1_b" value="">
+							</div>
+
+							<input type="text" name="usage_fee_1_b" id="usage_fee_1_b" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+						<dd  class="form_court_fee_dd">
+							<select name="week_1_c">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_1_c" id="start_time_1_c" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_1_c" id="end_time_1_c" value="">
+							</div>
+
+
+							<input type="text" name="usage_fee_1_c" id="usage_fee_1_c" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+						<dd class="form_court_fee_dd">
+							<select name="week_1_d">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_1_d" id="start_time_1_d" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_1_d" id="end_time_1_d" value="">
+							</div>
+
+							<input type="text" name="usage_fee_1_d" id="usage_fee_1_d" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+				</dl>
+
+				<dl>
+					<dt>コート種類</dt>
+						<dd class="form_radio form_courttype">
+							<div class="form_radio_block_1 clearfix">
+								<input type="radio" name="court_type_2" id="court_type_2_r" value="">
+								<label for="court_type_2_r">通常コート</label>
+								<input type="radio" name="court_type_2" id="court_type_2_sosaichi" value="">
+								<label for="court_type_2_sosaichi">ソサイチコート</label>
+							</div>
+							<div class="form_radio_block_2 clearfix">
+								<input type="radio" name="court_type_2" id="court_type_2_other" value="">
+								<label for="court_type_2_other">その他のコート</label>
+								<input type="text" name="court_type_2_other" id="court_type_2_other" value="" placeholder="（例）VIPコート">
+							</div>								
+						</dd>
+					<dt>会員種別</dt>
+						<dd>
+							<select name="regi_type_2">
+							<option value="menber">メンバー会員</option>
+							<option value="visiter">ビジター（未会員）</option>
+							<option value="visiter">学生割引</option>
+							</select>
+						</dd>
+
+
+					<dt>料金</dt>
+						<dd class="form_court_fee_dd">
+							<select name="week_2_a">
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_2_a" id="start_time_2_a" value="10:00" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_2_a" id="end_time_2_a" value="">
+							</div>
+
+							<input type="text" name="usage_fee_2_a" id="usage_fee_2_a" value="">
+							<p class="form_en">円</p>							
+
+						</dd>
+
+						<dd class="form_court_fee_dd">
+							<select name="week_2_b">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_2_b" id="start_time_2_a" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_2_b" id="end_time_2_a" value="">
+							</div>
+
+
+							<input type="text" name="usage_fee_2_b" id="usage_fee_2_b" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+						<dd class="form_court_fee_dd">
+							<select name="week_2_c">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_2_c" id="start_time_2_c" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_2_c" id="end_time_2_c" value="">
+							</div>
+
+
+							<input type="text" name="usage_fee_2_c" id="usage_fee_2_c" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+						<dd class="form_court_fee_dd">
+							<select name="week_2y_d">
+							<option value=""></option>					
+							<option value="weekly">平日</option>
+							<option value="weekend">土日祝</option>
+							<option value="everyday">全日</option>	
+							</select>
+
+							<div class="form_court_fee_time clearfix">
+								<input type="time" name="start_time_2_d" id="start_time_2_d" value="" placeholder="10:00">
+								<p>～</p>
+								<input type="time" name="end_time_2_d" id="end_time_2_d" value="">
+							</div>
+
+							<input type="text" name="usage_fee_2_bd" id="usage_fee_2_d" value="">
+							<p class="form_en">円</p>							
+						</dd>
+
+
+				</dl>
+
+				<div class="add_fee_form">
+						<input type="button" name="add_form" id="add_form" value="＋ 料金登録フォームを追加">
+	
+
+				</div>
+
+
+			</div><!-- form_block -->
+
+
+			<div class="form_block clearfix">
+				<h2>
+					その他の情報
+				</h2>
+
+				<dl>
+					<dt>備考</dt>
+						<dd>
+							<textarea cols="37" rows="6"  name="info_note" id="info_note" value="" placeholder="（例）新しくてきれい。"></textarea>
+						</dd>
+
+			</div><!-- form_block -->			
+
+
+				<div class="entry_submit clearfix">
+					<input type="submit" name="entry_submit_button" id="entry_submit_button" value="記入内容を確認　＞">
+
+				</div>
+
+
+			</form>
+
+
+
+
+		</main>
+
+
+
+
+
+
+	</div><!-- /#content_wrapper -->
+
+<!--　main content-->	
+
+
+<!--　footer-->	
+
+	<footer role="contentinfo" class="clearfix">
+		<ul >
+			<li><a href="#">お問い合わせ</a></li>
+			<li><a href="#">利用規約</a></li>
+			<li><a href="#">プライバシーポリシー</a></li>
+			<li>Copyright © 2016 サルサーチ All rights reserved.</li>
+		</ul>
+
+	</footer>
+
+<!--　footer-->	
+
+
+</div><!-- /#wrapper -->
+</body>
+</html>
